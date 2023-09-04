@@ -55,7 +55,7 @@ class CfgVehicles
 		picture	= "\A3\Weapons_F\Data\placeholder_co.paa"; /// just some icon in command bar
 		Icon	= "\A3\Weapons_F\Data\placeholder_co.paa"; /// icon in map
 
-		displayName = "Test Car"; /// displayed in Editor
+		displayName = "Caveirão Zeus"; /// displayed in Editor
 
 		//hiddenSelections[] = {"camo1"}; ///we want to allow changing the color of this selection
 
@@ -536,13 +536,12 @@ class CfgVehicles
 	};
 
 	// Derivate from the base class
-	class C_Test_Car_01_F: Test_Car_01_base_F /// some class that is going to be visible in editor
-	{
-		scope	= 2; 			/// makes the car visible in editor
-		scopeCurator=2;			// scope 2 means it's available in Zeus mode (0 means hidden)
-		crew 	= "C_man_1"; 	/// we need someone to fit into the car
-		side	= 3; 			/// civilian car should be on civilian side
-		faction	= CIV_F;		/// and with civilian faction
-	};
-
+      class C_Test_Car_01_F: Test_Car_01_base_F
+       {
+          scope = 2;
+          scopeCurator = 2;
+          crew = "C_man_1";
+          side = 1; // Change to BLUEFOR
+          faction = "BLU_F"; // Change to BLUEFOR faction
+       };
 };
