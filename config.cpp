@@ -365,6 +365,11 @@ class CfgVehicles
 				gunnerGetOutAction = "GetOutHigh";
 				canHideGunner = 0;
 				
+            minElev = -35;   // Minimum elevation angle (up)
+            maxElev = 35;    // Maximum elevation angle (down)
+            minTurn = -35;   // Minimum turn angle (left)
+            maxTurn = 35;    // Maximum turn angle (right)
+
 				enabledByAnimationSource = "left_gunner_move";
 				inGunnerMayFire = 1;
 				outGunnerMayFire = 1;
